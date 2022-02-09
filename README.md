@@ -16,6 +16,22 @@ pip install luigi
 
  src/luigi/jobs.py
 
+```
 luigi –m <path to scheduler/job> <scheduler/job class name> --param1 <param1> ….. --paramN <paramN>
   
 luigi –m luigi.jobs MyJob --name Junaid
+```
+
+ ```
+import luigi
+class MyJob(luigi.Task):
+            name = luigi.Parameter(default=None)
+            def requires(self):
+                        return depends()
+            def run(self):
+                        doWork()
+            def input(self):
+                        return <input path>
+            def output(self):
+                        return <output path>
+```
