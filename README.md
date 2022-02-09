@@ -8,3 +8,9 @@ Luigi should run all the Tasks in the schedule (this should go relatively quickl
 ## Run
 
 - python le_main.py
+
+##  Run with luigi
+
+pip install luigi
+
+luigi –m <path to scheduler/job> <scheduler/job class name> --param1 <param1> ….. --paramN <paramN>
