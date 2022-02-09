@@ -13,4 +13,8 @@ Luigi should run all the Tasks in the schedule (this should go relatively quickl
 
 pip install luigi
 
+ src/luigi/jobs.py
+
 luigi –m <path to scheduler/job> <scheduler/job class name> --param1 <param1> ….. --paramN <paramN>
+  
+luigi –m luigi.jobs MyJob --name Junaid
